@@ -1,0 +1,22 @@
+{
+  "autos": {
+    "auto1": {
+      "$ref": "auto-1.json"
+    },
+    "auto2": {
+      "$ref": "auto-2.json"
+    },
+    "auto3": {
+      "$ref": "auto-3.json"
+    },
+    "auto4": {
+      "$ref": "auto-4.json"
+    },
+    "auto5": {
+      "$ref": "auto-5.json"
+    },
+    "auto6": {
+      "$ref": "auto-6.json"
+    }
+  }
+}

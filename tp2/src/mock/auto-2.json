@@ -1,0 +1,18 @@
+{
+    "id":2,
+    "marca": "Ford",
+    "modelo": "Mustang",
+    "año": 2023,
+    "precio": 45000,
+    "coverImage":"../imagenes-autos/ford-mustang.jpg",
+    "caracteristicas": {
+      "motor": "5.0L V8",
+      "transmision": "Manual",
+      "tracción": "Trasera"
+    },
+    "detalles": {
+      "asientos": 4,
+      "puertas": 2,
+      "kilometros":7000
+    }
+}

@@ -1,0 +1,19 @@
+
+{
+    "id":6,
+    "marca": "BMW",
+    "modelo": "Serie 3",
+    "año": 2023,
+    "precio": 50000,
+    "coverImage":"../imagenes-autos/BMW-Serie3.jpg",
+    "caracteristicas": {
+      "motor": "2.0L 4 cilindros",
+      "transmision": "Automática",
+      "tracción": "Trasera"
+    },
+    "detalles": {
+      "asientos": 5,
+      "puertas": 4,
+      "kilometros":3000
+    }
+}

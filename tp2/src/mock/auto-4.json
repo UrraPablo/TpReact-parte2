@@ -1,0 +1,19 @@
+{
+    "id":4,
+    "marca": "Chevrolet",
+    "modelo": "Camaro",
+    "año": 2023,
+    "color": "Negro",
+    "precio": 42000,
+    "coverImage":"../imagenes-autos/chevrolet-camaro.jpg",
+    "caracteristicas": {
+      "motor": "6.2L V8",
+      "transmision": "Automática",
+      "tracción": "Trasera"
+    },
+    "detalles": {
+      "asientos": 4,
+      "puertas": 2,
+      "kilometros":10000
+    }
+}

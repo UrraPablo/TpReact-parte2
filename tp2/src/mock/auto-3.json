@@ -1,0 +1,18 @@
+{
+    "id":3,
+    "marca": "Honda",
+    "modelo": "Civic",
+    "año": 2024,
+    "precio": 28000,
+    "coverImage":"../imagenes-autos/honda-civic.jpg",
+    "caracteristicas": {
+      "motor": "1.5L 4 cilindros",
+      "transmision": "CVT",
+      "tracción": "Delantera"
+    },
+    "detalles": {
+      "asientos": 5,
+      "puertas": 4,
+      "kilometros":100
+    }
+}
