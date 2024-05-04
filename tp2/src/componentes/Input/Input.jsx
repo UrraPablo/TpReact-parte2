@@ -1,7 +1,8 @@
 import React from 'react'
+import './Input.module.css'
 
 export const Input = () => {
   return (
-    <div>Input</div>
+    <input type='text'></input>
   )
 }
