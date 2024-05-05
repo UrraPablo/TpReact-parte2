@@ -1,0 +1,18 @@
+{
+    "id":5,
+    "marca": "Volkswagen",
+    "modelo": "Golf",
+    "año": 2022,
+    "precio": 30000,
+    "coverImage":"../imagenes-autos/volkswagen-golf.png",
+    "caracteristicas": {
+      "motor": "1.4L 4 cilindros",
+      "transmision": "Automática",
+      "tracción": "Delantera"
+    },
+    "detalles": {
+      "asientos": 5,
+      "puertas": 4,
+      "kilometros":700
+    }
+  }

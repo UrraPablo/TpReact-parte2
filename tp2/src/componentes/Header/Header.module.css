@@ -18,6 +18,7 @@ li a{
     text-decoration: none;
 }
 
-.input{
-    margin-left: 90px;
+.logoPagina{
+    max-width: 200px;
+    filter: invert(100%);
 }

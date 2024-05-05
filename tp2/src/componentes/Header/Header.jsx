@@ -1,28 +1,19 @@
 import React from 'react';
-import './Header.module.css';
+import styles from './Header.module.css';
 import { Input } from '../Input/Input';
 
-
-export const Header = () => {
+export const Header = ({ onInputChange }) => {
   return (
-    <nav className='navbar'>
-        <ul>
-          <li>
-            <img className='logoPagina' src="../../../public/imagenes/lamborginiLogo.jpg" alt="Logo de la Pagina" />
-
-          </li>
-          <li>
-             <img className='logoHome' src="../../../public/imagenes/home_circle_icon_137496.svg" alt="logo home" />
-
-          </li>
-          <li className='input'>
-            <Input/>
-
-          </li>
-
-        </ul>
+    <nav className='navbar mb-5'>
+      <ul className="flex justify-between items-center">
+        <li>
+          <img className={`${styles.logoPagina} p-2`} src="/imagenes/logo.svg" alt="Logo de la Pagina" />
+        </li>
+        <li className='flex items-center'>
+          <Input onInputChange={onInputChange} /> {/* Pasamos la función onInputChange como prop */}
+        </li>
+        <li></li>
+      </ul>
     </nav>
-    
-
-  )
-}
+  );
+};

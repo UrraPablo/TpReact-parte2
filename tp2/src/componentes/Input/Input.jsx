@@ -1,8 +1,16 @@
-import React from 'react'
-import './Input.module.css'
+import React, { useState } from 'react';
+import './Input.module.css';
 
-export const Input = () => {
+export const Input = ({ onInputChange }) => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (event) => {
+    const { value } = event.target;
+    setInputValue(value);
+    onInputChange(value); // Llama a la función de filtro con el nuevo valor del input
+  };
+
   return (
-    <input type='text'></input>
-  )
-}
+    <input type='text' placeholder="Buscar..." value={inputValue} onChange={handleChange} />
+  );
+};
