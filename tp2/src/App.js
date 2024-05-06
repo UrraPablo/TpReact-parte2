@@ -1,25 +1,27 @@
 //import logo from './logo.svg';
 import './App.css';
 import {Home} from './pages/Home/Home.jsx';
-// import {
-//   createBrowserRouter,
-//   RouterProvider,
-// } from "react-router-dom";
+import Detalle from './pages/Detalle/Detalle.jsx';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <div>Hello world!</div>,
-//   },
-// ]);
-
-//const url ='./mock/elementos.json';
-
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path:"/detalle",
+    element:<Detalle />,
+  },
+]);
 
 function App() {
   return (
     <div className='App'>
-      <Home/>
+      <RouterProvider router={router} />
     </div>
   );
 }
