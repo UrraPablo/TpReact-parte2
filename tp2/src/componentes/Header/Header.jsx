@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Header.module.css';
 import { Input } from '../Input/Input';
-
+import { Link } from 'react-router-dom';
 export const Header = ({ onInputChange }) => {
   return (
     <nav className='navbar mb-5'>
       <ul className="flex justify-between items-center">
         <li>
-          <img className={`${styles.logoPagina} p-2`} src="/imagenes/logo.png" alt="Logo de la Pagina" />
+          <Link to="/"> <img className={`${styles.logoPagina} p-2`} src="/imagenes/logo.png" alt="Logo de la Pagina"/> </Link>
         </li>
         <li className='flex items-center'>
           <Input onInputChange={onInputChange} /> {/* Pasamos la función onInputChange como prop */}
