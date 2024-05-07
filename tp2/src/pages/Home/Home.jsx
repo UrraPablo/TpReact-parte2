@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header} from '../../componentes/Header/Header';
 import { Footer } from '../../componentes/Footer/Footer';
-import { Button } from '../../componentes/Button/Button';
+//import { Button } from '../../componentes/Button/Button';
 import { Grid } from '../../componentes/Grid/Grid';
 import { useState, useEffect } from 'react';
 import './Home.modules.css';

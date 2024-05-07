@@ -8,9 +8,9 @@ button{
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    margin-top: 15px;
 }
 
 button:hover{
-    background-color: blue;
-    color: white;
+    background-color: rgb(184, 184, 223);
 }
