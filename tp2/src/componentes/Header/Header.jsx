@@ -8,7 +8,7 @@ export const Header = ({ onInputChange }) => {
     <nav className='navbar mb-5'>
       <ul className="flex justify-between items-center">
         <li>
-          <Link to="/"> <img className={`${styles.logoPagina} p-2`} src="/imagenes/logo.png" alt="Logo de la Pagina"/> </Link>
+          <Link to="/"> <img className={`${styles.logoPagina} p-0`} src="/imagenes/logo.png" alt="Logo de la Pagina"/> </Link>
         </li>
         {onInputChange && (
           <li className='flex items-center'>

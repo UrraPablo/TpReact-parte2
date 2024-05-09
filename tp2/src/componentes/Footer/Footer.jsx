@@ -2,10 +2,9 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className='flex flex-row justify-between items-center bg-red-600 text-white w-full mt-auto'>
+    <footer className='flex flex-row justify-between p-2 items-center bg-neutral-800 text-white w-full mt-auto'>
       <div className='w-1/4'>
-        <h3 className="text-base font-normal">Ubicación</h3>
-        <p>San Martín 123, Neuquén Capital</p>
+        <h3 className="text-base font-normal">San Martín 123, Neuquén Capital</h3>
       </div>
       <div className='w-1/4'>
         <h3 className="text-base font-normal">Sobre Nosotros</h3>
@@ -15,7 +14,7 @@ export const Footer = () => {
         <a href="#" className="footer-icon">
           <img src='/imagenes/Whatsapp.png' alt='Logo Whatsapp' className="w-6 h-6 hover:scale-110" />
         </a>
-        <a href="#" className="footer-icon">
+        <a href="#" className="footer-icon ml-2">
           <img src='/imagenes/instagram.png' alt='Logo Instagram' className="w-6 h-6 hover:scale-110" />
         </a>
         <a href="#" className="footer-icon mr-1">
