@@ -1,8 +1,8 @@
 import React from 'react';
 import './Button.module.css';
 
-export const Button = ({texto}) => {
+export const Button = ({texto,onCkick}) => {
   return (
-    <button >{texto}</button>
+    <button onClick={onCkick} >{texto}</button>
   )
 }
