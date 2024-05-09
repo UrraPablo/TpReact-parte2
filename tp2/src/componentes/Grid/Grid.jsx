@@ -1,5 +1,4 @@
 import React from "react";
-import './Grid.module.css';
 import Card from '../Card/Card';
 
 export const Grid = ({ elements }) => {

@@ -1,7 +1,5 @@
 import React from "react";
 import {Link} from 'react-router-dom'
-import './Card.module.css';
-
 export const Card = ({ element }) => {
     return (
         <Link to={`/detalle/${element.id}`} state={{ detalle: element }}>
