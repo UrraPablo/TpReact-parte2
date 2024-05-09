@@ -9,46 +9,41 @@ import {jsPDF} from 'jspdf';
 
 const Detalle = () => {
 
-  //   const [filteredElements, setFilteredElements] = useState([]);
-  //   const [allElements, setAllElements] = useState([]);
+    const [filteredElements, setFilteredElements] = useState([]);
+    const [allElements, setAllElements] = useState([]);
 
-  //   useEffect(() => {
-  //     fetch('/mock/autos.json')
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         setAllElements(data);
-  //         setFilteredElements(data);
-  //       })
-  //       .catch(error => console.error('Error fetching data:', error));
-  //   }, []);
+    useEffect(() => {
+      fetch('/mock/autos.json')
+        .then(response => response.json())
+        .then(data => {
+          setAllElements(data);
+          setFilteredElements(data);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }, []);
 
-  //   const handleFilter = (value) => {
-  //   const filtered = allElements.filter(element => {
-  //     const marca = element.marca ? element.marca.toLowerCase() : '';
-  //     const modelo = element.modelo ? element.modelo.toLowerCase() : '';
-  //     const color = element.color ? element.color.toLowerCase() : '';
+    const handleFilter = (value) => {
+    const filtered = allElements.filter(element => {
+      const marca = element.marca ? element.marca.toLowerCase() : '';
+      const modelo = element.modelo ? element.modelo.toLowerCase() : '';
+      const color = element.color ? element.color.toLowerCase() : '';
   
-  //     return (
-  //       marca.includes(value.toLowerCase()) ||
-  //       modelo.includes(value.toLowerCase()) ||
-  //       color.includes(value.toLowerCase())
-  //     );
-  //   });
-  //   setFilteredElements(filtered);
-  // };
+      return (
+        marca.includes(value.toLowerCase()) ||
+        modelo.includes(value.toLowerCase()) ||
+        color.includes(value.toLowerCase())
+      );
+    });
+    setFilteredElements(filtered);
+  };
 
-    function generarPdf(){
-        
-        const doc=new jsPDF('1','mm',[1500,1400]);
-        const pdfjs = document.querySelector('#toPdf');
-        doc.html(pdfjs,{
-            callback: function(doc){
-                doc.save('Detalle Auto');
-            },
-            x:12,
-            y:12
-        });
-    }// fin function
+  const generarPdf =async()=>{
+    const pdf = new jsPDF('portrait','pt','a4');
+    const datos=await document.querySelector('#toPdf');
+    pdf.html(datos).then(()=>{
+      pdf.save('auto.pdf');
+    });
+  }
 
   const { id } = useParams();
 
@@ -65,7 +60,7 @@ const Detalle = () => {
 
   return (
     <div id='toPdf' className='flex flex-col min-h-screen'>
-       <Header onInputChange={handleFilter} /> {/* Pasamos la función de filtro como prop */}
+       <Header onInputChange={handleFilter}/> {/* Pasamos la función de filtro como prop */}
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="md:w-1/2">
@@ -106,7 +101,7 @@ const Detalle = () => {
               <li>Puertas: {auto.detalles?.puertas}</li>
               <li>Kilómetros: {auto.detalles?.kilometros}</li>
             </ul>
-            <Button texto='generar PDF' onClick={console.log('descargar pdf')}/>
+            <Button texto='generar PDF' onClick={generarPdf}/>
             <Link to={'/'}>
               <Button texto='Volver'/>
             </Link>

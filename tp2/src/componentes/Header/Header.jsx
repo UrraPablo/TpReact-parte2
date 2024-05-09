@@ -13,7 +13,7 @@ export const Header = ({ onInputChange }) => {
         <li className='flex items-center'>
           <Input onInputChange={onInputChange} /> {/* Pasamos la función onInputChange como prop */}
         </li>
-        <li></li>
+        
       </ul>
     </nav>
   );
