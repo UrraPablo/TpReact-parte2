@@ -10,9 +10,11 @@ export const Header = ({ onInputChange }) => {
         <li>
           <Link to="/"> <img className={`${styles.logoPagina} p-2`} src="/imagenes/logo.png" alt="Logo de la Pagina"/> </Link>
         </li>
-        <li className='flex items-center'>
-          <Input onInputChange={onInputChange} /> {/* Pasamos la función onInputChange como prop */}
-        </li>
+        {onInputChange && (
+          <li className='flex items-center'>
+            <Input onInputChange={onInputChange} /> {/* Pasamos la función onInputChange como prop */}
+          </li>
+        )}
         <li></li>
       </ul>
     </nav>
