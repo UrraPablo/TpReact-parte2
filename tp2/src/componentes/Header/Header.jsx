@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.css';
 import { Input } from '../Input/Input';
 import { Link } from 'react-router-dom';
+
 export const Header = ({ onInputChange }) => {
   return (
     <nav className='navbar mb-5'>

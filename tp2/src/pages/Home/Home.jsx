@@ -4,6 +4,7 @@ import { Footer } from '../../componentes/Footer/Footer';
 //import { Button } from '../../componentes/Button/Button';
 import { Grid } from '../../componentes/Grid/Grid';
 import { useState, useEffect } from 'react';
+//import { useNavigate } from 'react-router-dom';
 import './Home.modules.css';
 
 export const Home = () => {

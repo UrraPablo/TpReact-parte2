@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../../componentes/Header/Header';
 import { Footer } from '../../componentes/Footer/Footer';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams} from 'react-router-dom';
+import {Link} from 'react-router-dom'
 import './Detalle.module.css';
 import {Button} from '../../componentes/Button/Button';
 import {jsPDF} from 'jspdf';
@@ -77,7 +78,10 @@ const Detalle = () => {
               <li>Puertas: {auto.detalles?.puertas}</li>
               <li>Kilómetros: {auto.detalles?.kilometros}</li>
             </ul>
-            <Button texto='generar PDF' onClick={generarPdf}/>
+            <Button texto='generar PDF' onClick={console.log('descargar pdf')}/>
+            <Link to={'/'}>
+              <Button texto='Volver'/>
+            </Link>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ export const Input = ({ onInputChange }) => {
     const { value } = event.target;
     setInputValue(value);
     onInputChange(value); // Llama a la función de filtro con el nuevo valor del input
+    
   };
 
   return (
