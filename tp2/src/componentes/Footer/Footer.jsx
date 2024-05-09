@@ -18,7 +18,7 @@ export const Footer = () => {
         <a href="#" className="footer-icon">
           <img src='/imagenes/instagram.png' alt='Logo Instagram' className="w-6 h-6 hover:scale-110" />
         </a>
-        <a href="#" className="footer-icon">
+        <a href="#" className="footer-icon mr-1">
           <img src='/imagenes/twitter.png' alt='Logo Twitter' className="w-9 h-6 hover:scale-110" />
         </a>
       </div>
