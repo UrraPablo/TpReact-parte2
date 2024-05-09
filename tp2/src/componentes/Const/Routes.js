@@ -1,4 +1,4 @@
-import {BrowserRouter ,Routes,Route } from 'react-router-dom';
-
-const routers
-
+export const ROUTES ={
+    home: "/",
+    detalles: "/detalle/:id",
+}

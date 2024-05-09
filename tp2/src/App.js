@@ -5,14 +5,14 @@ import Detalle from './pages/Detalle/Detalle.jsx';
 import {
   Routes, Route, BrowserRouter as Router
 } from "react-router-dom";
-
+import {ROUTES} from "./componentes/Const/Routes.js";
 function App() {
   return (
     <div className='App'>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/detalle/:id" element={<Detalle />} />
+          <Route path={ROUTES.home} element={<Home />} />
+          <Route path={ROUTES.detalles} element={<Detalle />} />
         </Routes>
       </Router>
     </div>
