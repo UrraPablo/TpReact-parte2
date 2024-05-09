@@ -9,18 +9,13 @@ import {jsPDF} from 'jspdf';
 
 const Detalle = () => {
 
-    function generarPdf(){
-        
-        const doc=new jsPDF('1','mm',[1500,1400]);
-        const pdfjs = document.querySelector('#toPdf');
-        doc.html(pdfjs,{
-            callback: function(doc){
-                doc.save('Detalle Auto');
-            },
-            x:12,
-            y:12
-        });
-    }// fin function
+const generarPdf =async()=>{
+  const pdf=new jsPDF('portrait','pt','a4');
+  const datos = await document.querySelector('#toPdf');
+  pdf.html(datos).then(()=>{
+    pdf.save('detalleAuto.pdf');
+  })
+}
 
   const { id } = useParams();
 
@@ -78,7 +73,7 @@ const Detalle = () => {
               <li>Puertas: {auto.detalles?.puertas}</li>
               <li>Kilómetros: {auto.detalles?.kilometros}</li>
             </ul>
-            <Button texto='generar PDF' onClick={console.log('descargar pdf')}/>
+            <Button texto='generar PDF' onClick={generarPdf}/>
             <Link to={'/'}>
               <Button texto='Volver'/>
             </Link>
