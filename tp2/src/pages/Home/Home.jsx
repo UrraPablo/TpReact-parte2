@@ -37,7 +37,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="bg-neutral-900">
+    <div className="bg-neutral-900 flex flex-col min-h-screen">
       <Header onInputChange={handleFilter} /> {/* Pasamos la función de filtro como prop */}
       <div className="flex flex-col items-center justify-center">
         <Grid elements={filteredElements} />

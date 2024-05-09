@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from '../../componentes/Header/Header';
 import { Footer } from '../../componentes/Footer/Footer';
-import { Navigate, useParams} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import {Link} from 'react-router-dom'
 import './Detalle.module.css';
 import {Button} from '../../componentes/Button/Button';
@@ -36,7 +36,7 @@ const Detalle = () => {
   }, [id]);
 
   return (
-    <div id='toPdf'>
+    <div id='toPdf' className='flex flex-col min-h-screen'>
       <Header></Header>
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
