@@ -10,7 +10,7 @@ import {jsPDF} from 'jspdf';
 const Detalle = () => {
 
 const generarPdf =async()=>{
-  const pdf=new jsPDF('portrait','pt','a4');
+  const pdf=new jsPDF('p','mm','a4');
   const datos = await document.querySelector('#toPdf');
   pdf.html(datos).then(()=>{
     pdf.save('detalleAuto.pdf');
