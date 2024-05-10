@@ -37,11 +37,14 @@ Una vez instalado React, dirijase al link de instalación de Tailwindcss. Y siga
 Esta libreria la vamos a usar para poder exportar la información del auto seleccionado a un archivo pdf.
 
 1. Posicionese en la carpeta del proyecto en con la terminal de vscode.
-2. Ejecute el siguiente comando: **npm install jspdf --save**
+2. Ejecute el siguiente comando: **npm install jspdf --save**.
+3. En el archivo package.json en "dependecies" verá la libreria (jspdf) y su versión.
 
 # Ejecucion del proyecto
 Para poder correr el proyecto siga los siguientes pasos:
-1. En el repositorio haga click en <code> y copie el link.
+1. En el repositorio haga click en code y copie el link.
 2. Abra su editor de codigo y seleccione una carpeta donde se guardara el proyecto.
-3. Abra la terminal del editor de codigo y ejecute el siguiente comando.  
-4. En el archivo package.json en "dependecies" verá la libreria (jspdf) y su versión. 
+3. Abra la terminal del editor de codigo y ejecute el siguiente comando **git clone pegar la url copiada del paso 2**.  
+4. Muevase a la carpeta tp2 (cd TpReact-parte2/tp2).
+5. Instale la carpeta node_modules (si no la tiene), con el siguiente comando: **npm install**.
+6. Ejecute el comando **npm start** y el proyecto se abrira en el navegador.    
