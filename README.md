@@ -13,7 +13,7 @@ Este proyecto consiste en una galeria de imagenes de <strong style='color:rgb(0,
 Puedes verificar la instalacion en la terminal (**Linux**)("npm -v" y "node -v"), o cmd (**Windows**)("npm --version" y "node --version").
 2. Instalar git https://git-scm.com/downloads.
 
-## Pasos para ajecutar la app
+## Pasos para ejecutar la app
 1. Dirigise al directorio donde se instalará el proyecto vía consola "cd ./directorio".
 2. Ejecuta el comando "git clone https://github.com/UrraPablo/TpReact-parte2"
 3. Muevase a la carpeta tp2 (cd TpReact-parte2/tp2).
